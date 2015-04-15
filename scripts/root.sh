@@ -1,3 +1,4 @@
+#!/bin/bash
 check(){
     echo "Requesting root permissions..."
     adb shell su -c "$BB echo true">tmpbak/rootPermission

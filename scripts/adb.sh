@@ -1,3 +1,4 @@
+#!/bin/bash
 wakeDevice(){
 adb kill-server > /dev/null
 adb start-server > /dev/null
