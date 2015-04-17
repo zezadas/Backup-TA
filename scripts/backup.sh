@@ -230,7 +230,7 @@ adb shell su -c "$BB date +%Y%m%d.%H%M%S">tmpbak/TA.timestamp
 export backup_timestamp=`cat tmpbak/TA.timestamp`
 cd tmpbak
 
-zip ../backup/TA-backup-$backup_timestamp.zip TA.img TA.md5 TA.blk TA.serial TA.timestamp TA.version
+zip ../backup/TA-Backup-$backup_timestamp.zip TA.img TA.md5 TA.blk TA.serial TA.timestamp TA.version
 if ! [ "$?" -eq "0" ]
 then
 onBackupFailed

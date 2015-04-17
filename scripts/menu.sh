@@ -39,9 +39,7 @@ showMenu(){
 
 backup(){
     source scripts/backup.sh
-    
-    source scripts/restore.sh
-    
+
     echo " ======================================="
     echo "  BACKUP"
     echo " ======================================="
@@ -62,6 +60,8 @@ backup(){
 }
 
 restore(){
+    source scripts/restore.sh
+    
     echo -e ""
     echo "======================================="
     echo " RESTORE"
@@ -85,7 +85,9 @@ restore(){
    
 }
 
-retore_dry_run(){
+restore_dry_run(){
+    source scripts/restore.sh
+
     echo -e ""
     echo "======================================="
     echo " RESTORE DRY-RUN                       "
