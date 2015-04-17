@@ -3,6 +3,6 @@
 Ported version for linux.
 
 Tested:
-  *-backup
+  * -backup
 Not Tested:
-  *-restore
+  * -restore
