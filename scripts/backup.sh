@@ -84,7 +84,7 @@ if [[ "$backup_matchS1_Loader" =~ "1" ]]
 then
 if [[ "$backup_matchS1_HWConf" =~ "1" ]]
 then
-if [ "$backup_taPartitionName" -z ]
+if [ -z "$backup_taPartitionName" ]
 then
 export backup_taPartitionName=$1
 else
